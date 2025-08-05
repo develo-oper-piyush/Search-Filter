@@ -2,12 +2,12 @@
 
 Created by Piyush as a project for learning DOM in JS.
 
-This is a simple **SearcgFilter** which features different places, which can also be used for different items or users or anything else. This simple project uses the basic functionality of `filter()` function in JS.
+This is a simple **SearchFilter** which features different places, which can also be used for different items or users or anything else. This simple project uses the basic functionality of `filter()` function in JS.
 
 ---
 
 ### 🌐 Live Demo:
-- [Click here]()
+- [Click here](https://cardsearch.netlify.app/)
 
 ### 🚀 Quick Start (To try this on your local machine)
 
