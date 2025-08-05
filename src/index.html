@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="output.css" />
+        <title>Cards</title>
+    </head>
+    <body
+        class="m-0 p-0 box-border font-gilroy font-bold select-none w-screen h-screen bg-gray-200"
+    >
+        <div id="main" class="main-div">
+            <input
+                id="inp"
+                type="text"
+                class="p-2 bg-sec ring-prim shadow-md outline-none rounded-md pl-3 placeholder:tracking-widest"
+                placeholder="Search..."
+            />
+            <div class="msg hidden">
+                No places found with name "<span></span>"
+            </div>
+            <div
+                class="cards h-80 w-[90%] flex justify-center items-center bg-sec rounded-md gap-5"
+            ></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

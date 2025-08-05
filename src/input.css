@@ -1,0 +1,51 @@
+/*
+To install tailwind CSS Run this in terminal:
+npm install tailwindcss @tailwindcss/cli
+
+To watch Changes in CSS: (in Terminal)
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+*/
+
+/* Custom fonts url */
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+/*--------------------------------------------------------*/
+
+@import "tailwindcss";
+
+@theme {
+    /* Custom colors */
+    --color-prim: #1c1c1c;
+    --color-sec: #2c2c2c;
+
+    /* Custom fonts */
+    --font-gilroy-md: "Gilroy-Medium", sans-serif;
+    --font-gilroy-bold: "Gilroy-Bold", sans-serif;
+    --font-gilroy: "Gilroy-Regular", sans-serif;
+}
+
+/* Custom Components */
+@layer components {
+    /* Body div component (styling) */
+    .body {
+        @apply m-0 p-0 box-border font-gilroy font-bold select-none w-screen h-screen bg-gray-200;
+    }
+
+    /* Main div component (styling) */
+    .main-div {
+        @apply select-none w-screen h-screen flex flex-col justify-center items-center bg-prim text-white gap-y-5;
+    }
+    .card {
+        @apply relative w-45 h-65 overflow-hidden rounded-xl shadow-md ring-2 ring-sec
+        hover:scale-105 transition-all duration-400 cursor-pointer ease-in-out;
+    }
+}
+
+/* Custom Pure CSS */
+.blurred-layer {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+}
